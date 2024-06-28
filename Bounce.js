@@ -55,20 +55,22 @@
 
       function HandleMediaChange(event) {
         if (event.matches) {
-          console.log("Media query matches! Screen width is at least 359px.");
+          console.log("Media query matches! Screen width is at least 600px.");
+          MobileView();
           // Add your JavaScript for desktop view here
-          DesktopView();
+          
         } else {
           console.log(
-            "Media query does not match. Screen width is less than 359px."
+            "Media query does not match. Screen width is less than 600px."
           );
-          MobileView();
+          
+          DesktopView();
           // Add your JavaScript for mobile view here
         }
       }
 
       // Create a MediaQueryList object
-      const mediaQueryList = window.matchMedia("(min-width: 359px)");
+      const mediaQueryList = window.matchMedia("(max-width: 360px)");
 
       // Call the HandleMediaChange function at runtime
       HandleMediaChange(mediaQueryList);
