@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Bounce.css">
+
+</head>
+<body>
+    
+    <div class="ScoreTable">
+        <div class="Life">Life : 3</div>
+        <div class="Score">Score : 0</div>
+      </div>
+      <canvas id="canvas"></canvas>
+      <div class="Buttons">
+        <button class="left" onclick="MoveLeft()">Left</button>
+        <button class="right" onclick="MoveRight()">Right</button>
+      </div>
+      <button class="Play" onclick="startGame()">Play</button>
+      <button class="Reset" onclick="CallAgain()">Reset</button>
+  
+      <div class="drag-bar-container">
+        <div class="drag-bar"></div>
+      </div>
+
+    <script src="Bounce.js"></script>
+</body>
+</html>

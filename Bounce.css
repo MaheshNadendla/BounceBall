@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  canvas {
+    background-color: green;
+  }
+
+  .Buttons {
+    margin: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .Reset,
+  .Play {
+    display: none;
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    border: 1px solid;
+    width: 90px;
+    height: 40px;
+    font-size: large;
+    cursor: pointer;
+  }
+
+  .Reset,
+  .Play :hover {
+    background-color: blue;
+    color: white;
+  }
+
+  .Reset,
+  .Play :focus {
+    background-color: blue;
+    color: white;
+  }
+
+  .ScoreTable {
+    width: 800px;
+    height: 40px;
+    font-size: xx-large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+  }
+  .Life {
+    padding-left: 40px;
+  }
+  .Score {
+    padding-right: 40px;
+  }
+
+  .drag-bar-container {
+    margin-top: 20px;
+    width: 800px;
+    height: 30px;
+    background-color: lightgray;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .drag-bar {
+    width: 100px;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    left: 200px;
+  }
+
+  @media only screen and (max-width: 360px) {
+    .ScoreTable {
+      width: 330px;
+      height: 40px;
+      font-size: large;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .drag-bar-container {
+      margin-top: 20px;
+      width: 330px;
+      height: 30px;
+      background-color: lightgray;
+      position: relative;
+      cursor: pointer;
+      display: none;
+    }
+
+    .Buttons {
+      margin: 0px;
+      margin-top: 10px;
+      width: 200px;
+      height: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
