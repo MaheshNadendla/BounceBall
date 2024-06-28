@@ -55,12 +55,12 @@
 
       function HandleMediaChange(event) {
         if (event.matches) {
-          console.log("Media query matches! Screen width is at least 600px.");
+          console.log("Media query matches! Screen width is at least 259px.");
           // Add your JavaScript for desktop view here
           DesktopView();
         } else {
           console.log(
-            "Media query does not match. Screen width is less than 600px."
+            "Media query does not match. Screen width is less than 259px."
           );
           MobileView();
           // Add your JavaScript for mobile view here
@@ -68,7 +68,7 @@
       }
 
       // Create a MediaQueryList object
-      const mediaQueryList = window.matchMedia("(min-width: 360px)");
+      const mediaQueryList = window.matchMedia("(min-width: 259px)");
 
       // Call the HandleMediaChange function at runtime
       HandleMediaChange(mediaQueryList);
